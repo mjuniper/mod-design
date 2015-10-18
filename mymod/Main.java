@@ -1,6 +1,7 @@
 package mymod;
 
 import mymod.blocks.MyBlock;
+import mymod.blocks.MyBlockGen;
 import mymod.items.MyFood;
 import mymod.items.MyItem;
 import mymod.items.MyPickaxe;
@@ -169,7 +170,8 @@ public class Main {
  * EXTRA METHODS SECTION 
  * *********************************************************** */
 
-
+//  REGISTER THE ORE GENERATION 
+    GameRegistry.registerWorldGenerator(new MyBlockGen());
         
 
 
