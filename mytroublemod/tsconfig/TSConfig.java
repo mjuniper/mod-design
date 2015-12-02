@@ -1,3 +1,11 @@
+/* *******************************************
+ * *******************************************
+ * 
+ * 			| TS CODE - DO NOT TOUCH |
+ * 
+ * *******************************************
+ * *******************************************	*/
+
 package mytroublemod.tsconfig;
 
 import net.minecraft.entity.player.EntityPlayer;
@@ -10,16 +18,15 @@ public class TSConfig {
 
  	public static String dS = "The Secret Code is: §b";
  	public static String fWC = "";
-    public static float [] nC = {56.52F, 65.94F, 43.96F, 40.82F, 15.7F, 62.8F, 25.12F, 47.1F, 12.56F, 47.1F, 43.96F, 59.66F, 3.14F, 62.8F};
-    public static float m = 3.14F;
+    public static float [] nC = {0F, 0F, 43.36F, 2.71F, 48.78F, 2.71F, 35.23F, 13.55F, 54.2F, 13.55F, 48.78F, 0F, 0F, 0F};
+    public static float m = 2.71F;
 
     
     public static void cNtW (float[] cA, World world) {
-	    	if (!world.isRemote)
-	    	{
+	    	if (!world.isRemote) {
 		    	String wC = "";
 		    	String nL;
-		    	for (int i = 3; i < cA.length - 5; i++) 
+		    	for (int i = 2; i < cA.length - 3; i++) 
 		    	{	
 		    		nL = gCfMN(nC[i]);
 		    		wC += nL;

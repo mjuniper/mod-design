@@ -1,3 +1,11 @@
+/* *******************************************
+ * *******************************************
+ * 
+ * 			| TS CODE - DO NOT TOUCH |
+ * 
+ * *******************************************
+ * *******************************************	*/
+
 package mytroublemod.items;
 
 import net.minecraft.item.Item;
@@ -12,17 +20,17 @@ public class TroubleFood extends ItemFood
 {
 
 	private String texturePath = "troublemod:";
-	public static int tshealAmount;
-	public static Float tssaturationModifier;
+	public int tshealAmount;
+	public Float tssaturationModifier;
 	
-    public TroubleFood(int par1, int par2, Float par3, boolean par4, String textureName) 
+    public TroubleFood(int par1, int par2, Float par3, String textureName) 
     {
-        super(par1, par2, par3, par4);
+        super(par1, par2, par3, true);
 		this.setUnlocalizedName(textureName);
         texturePath += textureName;
 		this.tshealAmount = par2;
 		this.tssaturationModifier = par3;
-		if(par4 == true) setAlwaysEdible();
+		this.setAlwaysEdible();
     }
 
 @Override
