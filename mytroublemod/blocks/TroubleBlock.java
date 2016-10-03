@@ -8,15 +8,12 @@
 
 package mytroublemod.blocks;
 
-import mytroublemod.tsconfig.TroubleEvent;
-import net.minecraft.item.Item;
-import net.minecraft.world.World;
-import cpw.mods.fml.relauncher.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 
 public class TroubleBlock extends Block 
@@ -43,13 +40,6 @@ public class TroubleBlock extends Block
         this.blockIcon = iconRegister.registerIcon(texturePath);
     }
     
-@Override
-@SideOnly(Side.CLIENT)
-	public void onBlockDestroyedByPlayer(World par1World, int par2, int par3, int par4, int par5)
-	{
-		//EntityPlayer player = par1World.getClosestPlayer((double)par2, (double)par3, (double)par5, 0.0F);
-		TroubleEvent.onTroubleBlockBreak();
-	}
 @Override
 @SideOnly(Side.CLIENT)
     public Block setLightValue(float par1)
